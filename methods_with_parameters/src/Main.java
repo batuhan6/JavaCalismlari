@@ -6,6 +6,9 @@ public class Main {
 
         int topla = topla(5,2);
         System.out.println(topla);
+
+        int toplam = topla2(2,3,4,5,10);
+        System.out.println(toplam);
     }
 
     public static void ekle() {
@@ -26,6 +29,14 @@ public class Main {
 
     public static int topla(int x,int y){
         return x+y;
+    }
+
+    public static int topla2(int... sayilar){
+        int x = 0;
+        for(int sayi:sayilar){
+            x+=sayi;
+        }
+        return x;
     }
 }
 
