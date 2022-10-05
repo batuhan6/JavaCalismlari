@@ -1,4 +1,20 @@
 public class Product {
+
+    public Product(int id, String name, String description, double price, int stockAmount) {
+        System.out.println("Constructor calisti");
+        this.id=id;
+        this.name=name;
+        this.description=description;
+        this.price=price;
+        this.stockAmount=stockAmount;
+    }
+
+    //overloading aynı isimle kullanmaya denir.  Bu şu anlama geliyor yukardaki parametreli constructor. Bu ise
+    // parametresiz.
+    public Product() {
+
+    }
+
     //attribute || field
     private int id;
     private String name;
@@ -47,7 +63,7 @@ public class Product {
         this.stockAmount = stockAmount;
     }
 
-    public String getKod(){
-        return this.name.substring(0,3) + id;
+    public String getKod() {
+        return this.name.substring(0, 3) + id;
     }
 }

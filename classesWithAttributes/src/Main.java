@@ -1,7 +1,7 @@
 public class Main {
     public static void main(String[] args) {
 
-        Product product = new Product();
+        Product product = new Product(1, "Laptop", "Asus", 500, 3);
 
         product.setName("Laptop");
         product.setId(1);
