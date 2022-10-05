@@ -3,16 +3,18 @@ public class Main {
 
         Product product = new Product();
 
-        product.name = "Laptop";
-        product.id = 1;
-        product.description = "Asus";
-        product.price = 500;
-        product.stockAmount = 3;
+        product.setName("Laptop");
+        product.setId(1);
+        product.setDescription("Asus");
+        product.setPrice(500);
+        product.setStockAmount(3);
 
         ProductManager productManager = new ProductManager();
 
         productManager.Add(product);
 
-        System.out.println(product.name);
+        System.out.println(product.getName());
+
+        System.out.println(product.getKod());
     }
 }
