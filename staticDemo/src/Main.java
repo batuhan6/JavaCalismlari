@@ -6,5 +6,7 @@ public class Main {
         product.name = "Mouse";
 
         manager.add(product);
+
+        DatabaseHelper.Crud.Delete();
     }
 }
